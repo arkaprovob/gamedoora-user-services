@@ -29,7 +29,7 @@ jobs:
         run: mvn -B package --file pom.xml
         env:
           GITHUB_USERNAME: ${{ github.actor }}
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+          PACKAGES_TOKEN: ${{ secrets.PAT }}
 
       - name: Add execute permissions to script
         run: chmod +x ./deploy.sh
