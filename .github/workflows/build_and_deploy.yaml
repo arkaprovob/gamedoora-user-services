@@ -3,7 +3,11 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main  # replace with your default branch
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
