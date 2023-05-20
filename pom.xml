@@ -17,6 +17,8 @@
     <properties>
         <java.version>17</java.version>
     </properties>
+
+
     <dependencies>
         <dependency>
             <groupId>org.springdoc</groupId>
@@ -80,13 +82,13 @@
 
     </dependencies>
 
-    <repositories>
+<!--    <repositories>
         <repository>
             <id>github</id>
             <name>GitHub Arko's Apache Maven Packages</name>
             <url>https://maven.pkg.github.com/arkaprovob/gamedoora-model</url>
         </repository>
-    </repositories>
+    </repositories>-->
 
     <dependencyManagement>
         <dependencies>

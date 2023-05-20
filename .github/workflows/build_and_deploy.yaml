@@ -23,13 +23,14 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
           server-id: github
-          settings-path: ${{ github.workspace }}
+          server-username: GITHUB_USER_REF
+          server-password: GITHUB_TOKEN_REF
 
       - name: Build with Maven
         run: mvn -B package --file pom.xml
         env:
-          GITHUB_USERNAME: arkaprovob
-          PACKAGES_TOKEN: ${{ secrets.READ_PACKAGE }}
+          GITHUB_USER_REF: ${{ secrets.READ_PACKAGE }}
+          GITHUB_TOKEN_REF: ${{ secrets.READ_PACKAGE }}
 
       - name: Add execute permissions to script
         run: chmod +x ./deploy.sh
