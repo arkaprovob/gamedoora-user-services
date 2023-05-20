@@ -48,7 +48,7 @@
         <dependency>
             <groupId>com.gamedoora</groupId>
             <artifactId>gamedoora-model</artifactId>
-            <version>0.2.0</version>
+            <version>0.2.1</version>
         </dependency>
         <dependency>
             <groupId>org.mariadb.jdbc</groupId>
@@ -79,6 +79,15 @@
         </dependency>-->
 
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub Arko's Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/arkaprovob/gamedoora-model</url>
+        </repository>
+    </repositories>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
