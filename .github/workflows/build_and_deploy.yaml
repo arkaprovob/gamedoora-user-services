@@ -28,7 +28,7 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
         env:
-          GITHUB_USERNAME: ${{ github.actor }}
+          GITHUB_USERNAME: arkaprovob
           PACKAGES_TOKEN: ${{ secrets.READ_PACKAGE }}
 
       - name: Add execute permissions to script
