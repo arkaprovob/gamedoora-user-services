@@ -39,5 +39,6 @@ jobs:
       - name: Publish to GitHub Packages
         run: mvn deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.PACKAGE_ACCESS_TOKEN }}
+          GITHUB_USER_REF: ${{ secrets.PACKAGE_ACCESS_USER }}
+          GITHUB_TOKEN_REF: ${{ secrets.PACKAGE_ACCESS_TOKEN }}
         if: ${{ steps.chkvrsn.outputs.exists == 'false' }}
