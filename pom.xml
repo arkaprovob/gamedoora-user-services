@@ -68,27 +68,7 @@
             <version>7.0.1</version>
             <type>jar</type>
         </dependency>
-        
-        <!--        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context-support</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>19.0</version>
-        </dependency>-->
-
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>github</id>
-            <name>GitHub Arko's Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/arkaprovob/gamedoora-model</url>
-        </repository>
-    </repositories>
 
     <dependencyManagement>
         <dependencies>
@@ -110,11 +90,23 @@
             </plugin>
         </plugins>
     </build>
-<distributionManagement>
-	  <repository>
-	    <id>codeartifact</id>
-	    <name>codeartifact</name>
-	    <url>https://gamedoora-727903310356.d.codeartifact.us-east-1.amazonaws.com/maven/Gamedoora/</url>
-	  </repository>
-</distributionManagement>
+
+    <!-- for  managing artifact upload to GitHub maven package manager-->
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Arko's Apache Maven Packages for model</name>
+            <url>https://maven.pkg.github.com/arkaprovob/gamedoora-user-services</url>
+        </repository>
+    </distributionManagement>
+
+    <!-- for downloading artifact from GitHub maven package manager-->
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub Arko's Apache Maven Packages for user services</name>
+            <url>https://maven.pkg.github.com/arkaprovob/gamedoora-user-services</url>
+        </repository>
+    </repositories>
+
 </project>
