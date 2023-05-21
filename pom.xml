@@ -11,7 +11,7 @@
     
     <groupId>com.gamedoora.backend</groupId>
     <artifactId>gamedoora-user-services</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>gamedoora-user-services</name>
     <description>Demo project for Spring Boot</description>
     <properties>
