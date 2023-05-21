@@ -108,7 +108,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Arko's Apache Maven Packages for user services</name>
-            <url>https://maven.pkg.github.com/arkaprovob/gamedoora-user-services</url>
+            <url>https://maven.pkg.github.com/arkaprovob/gamedoora-model</url>
         </repository>
     </repositories>
 
